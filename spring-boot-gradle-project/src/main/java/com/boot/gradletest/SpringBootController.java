@@ -10,7 +10,11 @@ import org.springframework.web.servlet.ModelAndView;
 @EnableAutoConfiguration
 public class SpringBootController {
 	
+	@RequestMapping("/welcome.html")
+	public ModelAndView welocmePage() {
 	
+		return new ModelAndView("welcome");
+	}
 	
 	@RequestMapping("/")
 	public String firstPage1()
